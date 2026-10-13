@@ -151,9 +151,26 @@
   <ItemGroup>
     <ClInclude Include="src\pch.h" />
     <ClInclude Include="src\scan_pattern.hpp" />
+    <ClInclude Include="src\core\camera.h" />
+    <ClInclude Include="src\core\feature.h" />
+    <ClInclude Include="src\core\game.h" />
+    <ClInclude Include="src\core\hooks.h" />
+    <ClInclude Include="src\core\object_list.h" />
+    <ClInclude Include="src\core\tracking.h" />
+    <ClInclude Include="src\overlay\menu.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\core\camera.cpp" />
+    <ClCompile Include="src\core\feature.cpp" />
+    <ClCompile Include="src\core\game.cpp" />
+    <ClCompile Include="src\core\hooks.cpp" />
+    <ClCompile Include="src\core\tracking.cpp" />
+    <ClCompile Include="src\features\aimbot.cpp" />
+    <ClCompile Include="src\features\always_succeed.cpp" />
+    <ClCompile Include="src\features\esp.cpp" />
+    <ClCompile Include="src\features\player_cheats.cpp" />
+    <ClCompile Include="src\overlay\menu.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
