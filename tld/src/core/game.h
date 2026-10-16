@@ -299,6 +299,19 @@ namespace Offsets
 	constexpr uintptr_t WillpowerConditionBonusPerSecond = 0x24;
 	constexpr uintptr_t WillpowerConditionBonusCap = 0x28;
 	constexpr uintptr_t WillpowerConditionDamageScale = 0x2C;
+	// Condition extras
+	constexpr uintptr_t ConditionCriticalHP = 0x28;
+	constexpr uintptr_t ConditionOverrideBlurLevel = 0xDC;
+	// Weather extras
+	constexpr uintptr_t WeatherBlizzardDegreesDrop = 0x34;
+	constexpr uintptr_t WeatherBlizzardChangePerSecond = 0x38;
+	constexpr uintptr_t WeatherDegreesPerSecondLow = 0x58;
+	constexpr uintptr_t WeatherDegreesPerSecondMedium = 0x5C;
+	constexpr uintptr_t WeatherDegreesPerSecondHigh = 0x60;
+	constexpr uintptr_t WeatherMinWindForBlowingSnow = 0x68;
+	constexpr uintptr_t WeatherClothingDamageInBlizzard = 0x138;
+	// Wind extras
+	constexpr uintptr_t WindMaxMPH = 0x28;
 	// Repairable
 	constexpr uintptr_t RepairNeverFail = 0x59;
 	constexpr uintptr_t RepairConditionIncrease = 0x38;

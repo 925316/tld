@@ -178,6 +178,7 @@
     <ClCompile Include="src\features\esp.cpp" />
     <ClCompile Include="src\features\esp_extra.cpp" />
     <ClCompile Include="src\features\fire.cpp" />
+    <ClCompile Include="src\features\give_more.cpp" />
     <ClCompile Include="src\features\inventory.cpp" />
     <ClCompile Include="src\features\inventory_extra.cpp" />
     <ClCompile Include="src\features\ice_fishing.cpp" />
@@ -190,6 +191,7 @@
     <ClCompile Include="src\features\needs.cpp" />
     <ClCompile Include="src\features\overlay_stats.cpp" />
     <ClCompile Include="src\features\player_cheats.cpp" />
+    <ClCompile Include="src\features\player_extra.cpp" />
     <ClCompile Include="src\features\player_stats.cpp" />
     <ClCompile Include="src\features\rest.cpp" />
     <ClCompile Include="src\features\skills.cpp" />
@@ -200,6 +202,7 @@
     <ClCompile Include="src\features\time_extra.cpp" />
     <ClCompile Include="src\features\weapons.cpp" />
     <ClCompile Include="src\features\weather.cpp" />
+    <ClCompile Include="src\features\weather_extra.cpp" />
     <ClCompile Include="src\features\wetness.cpp" />
     <ClCompile Include="src\features\world.cpp" />
     <ClCompile Include="src\overlay\menu.cpp" />
