@@ -266,6 +266,21 @@ namespace Offsets
 	// TimeOfDay durations
 	constexpr uintptr_t TODDayDurationMinutes = 0x3C;
 	constexpr uintptr_t TODNightDurationMinutes = 0x40;
+	// PlayerManager wetness rates
+	constexpr uintptr_t PlayerWetnessLightSnow = 0xA8;
+	constexpr uintptr_t PlayerWetnessHeavySnow = 0xAC;
+	constexpr uintptr_t PlayerWetnessBlizzard = 0xB0;
+	// IceFishingHole
+	constexpr uintptr_t IceFreezePercentPerHour = 0x28;
+	constexpr uintptr_t IceMinMinutesCatch = 0x2C;
+	constexpr uintptr_t IceMaxMinutesCatch = 0x30;
+	constexpr uintptr_t IceLineSnapDecay = 0x44;
+	constexpr uintptr_t IceOverfishingLimit = 0x4C;
+	constexpr uintptr_t IcePauseFreezing = 0x128;
+	// Repairable / Sharpenable
+	constexpr uintptr_t RepairableDurationMinutes = 0x40;
+	constexpr uintptr_t SharpenDurationMinutesMin = 0x38;
+	constexpr uintptr_t SharpenDurationMinutesMax = 0x3C;
 	// Repairable
 	constexpr uintptr_t RepairNeverFail = 0x59;
 	constexpr uintptr_t RepairConditionIncrease = 0x38;
@@ -384,6 +399,11 @@ namespace Rva
 	constexpr uintptr_t GameObject_get_transform = 0x3AE4A60;
 	constexpr uintptr_t Camera_get_main = 0x3A45BB0;
 	constexpr uintptr_t Camera_WorldToScreenPoint = 0x3A44650;
+	constexpr uintptr_t RenderSettings_SetFog = 0x3A72890;
+	constexpr uintptr_t RenderSettings_SetAmbientIntensity = 0x3A72790;
+	constexpr uintptr_t RenderSettings_SetFogDensity = 0x3A72BE0;
+	constexpr uintptr_t RenderSettings_SetFogStartDistance = 0x3A72930;
+	constexpr uintptr_t RenderSettings_SetFogEndDistance = 0x3A729E0;
 	// game
 	constexpr uintptr_t GearItem_get_DisplayName = 0x8369A0;
 	constexpr uintptr_t BaseAi_GetEyePos = 0x59C3F0;
@@ -646,6 +666,14 @@ using ObjectGetter_fn = void* (*)(void*);
 using UnlockBlueprint_fn = void (*)(void*, void*, void*);
 extern ObjectGetter_fn BlueprintManager_GetInstance;
 extern UnlockBlueprint_fn BlueprintManager_UnlockSilent;
+
+using RenderBool_fn = void (*)(bool, void*);
+using RenderFloat_fn = void (*)(float, void*);
+extern RenderBool_fn RenderSettings_SetFog;
+extern RenderFloat_fn RenderSettings_SetAmbientIntensity;
+extern RenderFloat_fn RenderSettings_SetFogDensity;
+extern RenderFloat_fn RenderSettings_SetFogStartDistance;
+extern RenderFloat_fn RenderSettings_SetFogEndDistance;
 
 // ---- il2cpp runtime API ----
 

@@ -125,6 +125,11 @@ WeatherTransition_SetStage_fn WeatherTransition_SetStage = nullptr;
 WeatherTransition_ForceStage_fn WeatherTransition_ForceStage = nullptr;
 ObjectGetter_fn BlueprintManager_GetInstance = nullptr;
 UnlockBlueprint_fn BlueprintManager_UnlockSilent = nullptr;
+RenderBool_fn RenderSettings_SetFog = nullptr;
+RenderFloat_fn RenderSettings_SetAmbientIntensity = nullptr;
+RenderFloat_fn RenderSettings_SetFogDensity = nullptr;
+RenderFloat_fn RenderSettings_SetFogStartDistance = nullptr;
+RenderFloat_fn RenderSettings_SetFogEndDistance = nullptr;
 
 Il2CppStringNew il2cpp_string_new = nullptr;
 
@@ -273,6 +278,11 @@ bool ResolveGameFunctions()
 	WeatherTransition_ForceStage = Resolve<WeatherTransition_ForceStage_fn>(base, Rva::WeatherTransition_ForceUnmanagedStage);
 	BlueprintManager_GetInstance = Resolve<ObjectGetter_fn>(base, Rva::BlueprintManager_GetInstance);
 	BlueprintManager_UnlockSilent = Resolve<UnlockBlueprint_fn>(base, Rva::BlueprintManager_UnlockSilent);
+	RenderSettings_SetFog = Resolve<RenderBool_fn>(base, Rva::RenderSettings_SetFog);
+	RenderSettings_SetAmbientIntensity = Resolve<RenderFloat_fn>(base, Rva::RenderSettings_SetAmbientIntensity);
+	RenderSettings_SetFogDensity = Resolve<RenderFloat_fn>(base, Rva::RenderSettings_SetFogDensity);
+	RenderSettings_SetFogStartDistance = Resolve<RenderFloat_fn>(base, Rva::RenderSettings_SetFogStartDistance);
+	RenderSettings_SetFogEndDistance = Resolve<RenderFloat_fn>(base, Rva::RenderSettings_SetFogEndDistance);
 
 	il2cpp_string_new = reinterpret_cast<Il2CppStringNew>(
 		GetProcAddress(gameAssembly, "il2cpp_string_new"));
