@@ -229,6 +229,43 @@ namespace Offsets
 	// FireStarterItem
 	constexpr uintptr_t FireStarterIgniteTinder = 0x20;
 	constexpr uintptr_t FireStarterIgniteTorch = 0x24;
+	// PlayerMovement stealth
+	constexpr uintptr_t DetectionRangeScaleCrouched = 0x4C;
+	constexpr uintptr_t FootStepRangeScaleCrouched = 0x50;
+	constexpr uintptr_t FootStepRangeScaleWalking = 0x54;
+	// Sprains
+	constexpr uintptr_t SprainChanceMovingWrist = 0x2C;
+	constexpr uintptr_t SprainBaseChanceSlope = 0x34;
+	constexpr uintptr_t SprainChanceEncumbered = 0x40;
+	constexpr uintptr_t SprainChanceExhausted = 0x44;
+	constexpr uintptr_t SprainChanceSprinting = 0x48;
+	// PlayerStruggle
+	constexpr uintptr_t StruggleBearConditionLoss = 0x38;
+	constexpr uintptr_t StruggleMooseConditionLoss = 0x3C;
+	constexpr uintptr_t StruggleWolfDamagePerSecond = 0x90;
+	constexpr uintptr_t StruggleWolfClothingDamageMin = 0x94;
+	constexpr uintptr_t StruggleWolfClothingDamageMax = 0x98;
+	constexpr uintptr_t StruggleBearClothingDamageMin = 0x9C;
+	constexpr uintptr_t StruggleBearClothingDamageMax = 0xA0;
+	constexpr uintptr_t StruggleCougarDamagePerSecond = 0xA4;
+	constexpr uintptr_t StruggleCougarClothingDamageMin = 0xA8;
+	constexpr uintptr_t StruggleCougarClothingDamageMax = 0xAC;
+	constexpr uintptr_t StruggleFleeChanceOnHit = 0xB0;
+	constexpr uintptr_t StruggleFleeChanceOnShot = 0xB4;
+	constexpr uintptr_t StruggleStunnedAfterBear = 0x50;
+	constexpr uintptr_t StruggleStunnedAfterWolf = 0x54;
+	constexpr uintptr_t StruggleSystemEnabled = 0x132;
+	constexpr uintptr_t StruggleStunnedAfterCougar = 0x48;
+	// ClothingItem damage
+	constexpr uintptr_t ClothingDecayWornOutside = 0x30;
+	constexpr uintptr_t ClothingDecayWornInside = 0x34;
+	// Headache
+	constexpr uintptr_t HeadacheInstances = 0x30;
+	// SprainPain
+	constexpr uintptr_t SprainPainInstances = 0x50;
+	// TimeOfDay durations
+	constexpr uintptr_t TODDayDurationMinutes = 0x3C;
+	constexpr uintptr_t TODNightDurationMinutes = 0x40;
 	// Repairable
 	constexpr uintptr_t RepairNeverFail = 0x59;
 	constexpr uintptr_t RepairConditionIncrease = 0x38;
