@@ -157,6 +157,7 @@
     <ClInclude Include="src\core\hooks.h" />
     <ClInclude Include="src\core\object_list.h" />
     <ClInclude Include="src\core\tracking.h" />
+    <ClInclude Include="src\features\common.h" />
     <ClInclude Include="src\overlay\menu.h" />
   </ItemGroup>
   <ItemGroup>
@@ -168,8 +169,23 @@
     <ClCompile Include="src\core\tracking.cpp" />
     <ClCompile Include="src\features\aimbot.cpp" />
     <ClCompile Include="src\features\always_succeed.cpp" />
+    <ClCompile Include="src\features\animals.cpp" />
+    <ClCompile Include="src\features\crafting.cpp" />
+    <ClCompile Include="src\features\equipment.cpp" />
     <ClCompile Include="src\features\esp.cpp" />
+    <ClCompile Include="src\features\fire.cpp" />
+    <ClCompile Include="src\features\inventory.cpp" />
+    <ClCompile Include="src\features\medical.cpp" />
+    <ClCompile Include="src\features\movement.cpp" />
+    <ClCompile Include="src\features\needs.cpp" />
+    <ClCompile Include="src\features\overlay_stats.cpp" />
     <ClCompile Include="src\features\player_cheats.cpp" />
+    <ClCompile Include="src\features\player_stats.cpp" />
+    <ClCompile Include="src\features\skills.cpp" />
+    <ClCompile Include="src\features\time.cpp" />
+    <ClCompile Include="src\features\weapons.cpp" />
+    <ClCompile Include="src\features\weather.cpp" />
+    <ClCompile Include="src\features\world.cpp" />
     <ClCompile Include="src\overlay\menu.cpp" />
     <ClCompile Include="src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
