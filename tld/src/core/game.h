@@ -281,6 +281,24 @@ namespace Offsets
 	constexpr uintptr_t RepairableDurationMinutes = 0x40;
 	constexpr uintptr_t SharpenDurationMinutesMin = 0x38;
 	constexpr uintptr_t SharpenDurationMinutesMax = 0x3C;
+	// Rest
+	constexpr uintptr_t RestReduceFatiguePerHour = 0x20;
+	constexpr uintptr_t RestMaxHoursSleepPerDay = 0x24;
+	constexpr uintptr_t RestPredatorInterruptionChance = 0x40;
+	constexpr uintptr_t RestPredatorInterruptionChanceShelter = 0x44;
+	constexpr uintptr_t RestWakeUpAtFullRest = 0x60;
+	// Anxiety / Fear
+	constexpr uintptr_t MentalHasAffliction = 0x78;
+	constexpr uintptr_t MentalHealthLossPerMinute = 0x64;
+	// ToxicFog
+	constexpr uintptr_t ToxicFogHasAffliction = 0x6C;
+	constexpr uintptr_t ToxicFogHealthLossPerMinute = 0x48;
+	constexpr uintptr_t ToxicFogAllowHeadache = 0x6D;
+	// Willpower
+	constexpr uintptr_t WillpowerTimeRemainingSeconds = 0x20;
+	constexpr uintptr_t WillpowerConditionBonusPerSecond = 0x24;
+	constexpr uintptr_t WillpowerConditionBonusCap = 0x28;
+	constexpr uintptr_t WillpowerConditionDamageScale = 0x2C;
 	// Repairable
 	constexpr uintptr_t RepairNeverFail = 0x59;
 	constexpr uintptr_t RepairConditionIncrease = 0x38;
