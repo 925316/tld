@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -159,6 +159,7 @@
     <ClInclude Include="src\core\object_list.h" />
     <ClInclude Include="src\core\tracking.h" />
     <ClInclude Include="src\features\common.h" />
+    <ClInclude Include="src\features\gear_iter.h" />
     <ClInclude Include="src\overlay\menu.h" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +173,7 @@
     <ClCompile Include="src\features\aimbot.cpp" />
     <ClCompile Include="src\features\always_succeed.cpp" />
     <ClCompile Include="src\features\animals.cpp" />
+    <ClCompile Include="src\features\bow_arrow.cpp" />
     <ClCompile Include="src\features\crafting.cpp" />
     <ClCompile Include="src\features\equipment.cpp" />
     <ClCompile Include="src\features\equipment_extra.cpp" />
