@@ -69,21 +69,9 @@ namespace
 	REGISTER_FEATURE_AS(CmdTimeAccelerate, ConsoleActionFeature, "Console", "Accelerate Time", 0xBD0420)
 	REGISTER_FEATURE_AS(CmdPassTime, ConsoleActionFeature, "Console", "Pass Time", 0xBC42C0)
 
-	// ---- world / progression ----
+	// ---- world ----
 	REGISTER_FEATURE_AS(CmdSave, ConsoleActionFeature, "Console", "Save Game", 0xBC76C0)
 	REGISTER_FEATURE_AS(CmdAutoSave, ConsoleActionFeature, "Console", "Auto Save", 0xBBFC50)
-	REGISTER_FEATURE_AS(CmdMapReveal, ConsoleActionFeature, "Console", "Reveal Map", 0xBD4510)
-	REGISTER_FEATURE_AS(CmdMapUnlockRegion, ConsoleActionFeature, "Console", "Unlock Map Region", 0xBD45A0)
-	REGISTER_FEATURE_AS(CmdUnlockRegion, ConsoleActionFeature, "Console", "Unlock Region", 0xBC1670)
-	REGISTER_FEATURE_AS(CmdBlueprintUnlock, ConsoleActionFeature, "Console", "Unlock Blueprint", 0xBB1370)
-	REGISTER_FEATURE_AS(CmdRecipeUnlockAll, ConsoleActionFeature, "Console", "Unlock All Recipes", 0xBC6230)
-	REGISTER_FEATURE_AS(CmdFeatUnlockAll, ConsoleActionFeature, "Console", "Unlock All Feats", 0xBBA260)
-	REGISTER_FEATURE_AS(CmdKnowledgeUnlock, ConsoleActionFeature, "Console", "Unlock Knowledge", 0xBC0660)
-	REGISTER_FEATURE_AS(CmdChallengeCompleteAll, ConsoleActionFeature, "Console", "Complete All Challenges", 0xBB2EA0)
-	REGISTER_FEATURE_AS(CmdEpisodeUnlock, ConsoleActionFeature, "Console", "Unlock Episode", 0xBBB0D0)
-	REGISTER_FEATURE_AS(CmdEpisodeComplete, ConsoleActionFeature, "Console", "Complete Episode", 0xBBAF80)
-	REGISTER_FEATURE_AS(CmdSurvey, ConsoleActionFeature, "Console", "Survey Region", 0xBCC0C0)
-	REGISTER_FEATURE_AS(CmdSurveyClear, ConsoleActionFeature, "Console", "Clear Survey", 0xBCC1E0)
 	REGISTER_FEATURE_AS(CmdClearJunk, ConsoleActionFeature, "Console", "Clear Junk", 0xBB40B0)
 	REGISTER_FEATURE_AS(CmdHideWatermark, ConsoleActionFeature, "Console", "Hide Test Watermark", 0xBBF2A0)
 	REGISTER_FEATURE_AS(CmdMapGps, ConsoleActionFeature, "Console", "Map GPS", 0xBD4460)
