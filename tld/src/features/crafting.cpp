@@ -15,25 +15,6 @@ namespace
 			});
 	}
 
-	void UnlockAllBlueprints()
-	{
-		if (!BlueprintManager_GetInstance || !BlueprintManager_UnlockSilent) return;
-		void* instance = BlueprintManager_GetInstance(nullptr);
-		if (!instance) return;
-
-		void* list = ReadPtr(reinterpret_cast<uintptr_t>(instance), 0x60); // m_AllBlueprints
-		void* items = ManagedListItems(list);
-		int count = ManagedListCount(list);
-		if (count > 50000) count = 50000;
-		for (int i = 0; i < count; ++i)
-		{
-			if (void* blueprint = ManagedArrayAt(items, i))
-			{
-				BlueprintManager_UnlockSilent(instance, blueprint, nullptr);
-			}
-		}
-	}
-
 	class InstantCookFeature : public Feature
 	{
 	public:
@@ -114,5 +95,4 @@ namespace
 	REGISTER_FEATURE(CookTimeFeature)
 	REGISTER_FEATURE(InstantIgniteFeature)
 	REGISTER_FEATURE(CookingSpeedFeature)
-	REGISTER_FEATURE_AS(UnlockAllBlueprintsAction, ActionFeature, "Crafting", "Unlock All Blueprints", UnlockAllBlueprints)
 }
