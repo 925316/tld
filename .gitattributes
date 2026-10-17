@@ -1,0 +1,10 @@
+# Text is stored with LF and never converted on checkout, so line endings
+# never show up as spurious diffs. Mirrors YimMenu's approach.
+* -crlf
+
+# Binary artifacts are stored verbatim.
+*.png binary
+*.ico binary
+*.lib binary
+*.dll binary
+*.pdb binary
