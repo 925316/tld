@@ -181,6 +181,7 @@
     <ClCompile Include="src\features\esp.cpp" />
     <ClCompile Include="src\features\esp_extra.cpp" />
     <ClCompile Include="src\features\fire.cpp" />
+    <ClCompile Include="src\features\insomnia.cpp" />
     <ClCompile Include="src\features\lure_bait.cpp" />
     <ClCompile Include="src\features\gamestats.cpp" />
     <ClCompile Include="src\features\shortwave.cpp" />
