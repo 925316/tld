@@ -5,21 +5,6 @@
 // affliction visual-effect suppression and assorted utility toggles.
 namespace
 {
-	// ---- feats ----
-	REGISTER_FEATURE_AS(CmdFeatBooksmarts, ConsoleActionFeature, "Console", "Grant Feat: Book Smarts", 0xBB9670)
-	REGISTER_FEATURE_AS(CmdFeatColdFusion, ConsoleActionFeature, "Console", "Grant Feat: Cold Fusion", 0xBB96D0)
-	REGISTER_FEATURE_AS(CmdFeatEfficientMachine, ConsoleActionFeature, "Console", "Grant Feat: Efficient Machine", 0xBB9740)
-	REGISTER_FEATURE_AS(CmdFeatFireMaster, ConsoleActionFeature, "Console", "Grant Feat: Fire Master", 0xBB97B0)
-	REGISTER_FEATURE_AS(CmdFeatFreeRunner, ConsoleActionFeature, "Console", "Grant Feat: Free Runner", 0xBB9820)
-	REGISTER_FEATURE_AS(CmdFeatSnowWalker, ConsoleActionFeature, "Console", "Grant Feat: Snow Walker", 0xBB9890)
-	REGISTER_FEATURE_AS(CmdFeatExpertTrapper, ConsoleActionFeature, "Console", "Grant Feat: Expert Trapper", 0xBB9900)
-	REGISTER_FEATURE_AS(CmdFeatStraightToHeart, ConsoleActionFeature, "Console", "Grant Feat: Straight To Heart", 0xBB9970)
-	REGISTER_FEATURE_AS(CmdFeatBlizzardWalker, ConsoleActionFeature, "Console", "Grant Feat: Blizzard Walker", 0xBB99E0)
-	REGISTER_FEATURE_AS(CmdFeatNightWalker, ConsoleActionFeature, "Console", "Grant Feat: Night Walker", 0xBB9A50)
-	REGISTER_FEATURE_AS(CmdFeatMasterHunter, ConsoleActionFeature, "Console", "Grant Feat: Master Hunter", 0xBB9AC0)
-	REGISTER_FEATURE_AS(CmdFeatSettledMind, ConsoleActionFeature, "Console", "Grant Feat: Settled Mind", 0xBB9B30)
-	REGISTER_FEATURE_AS(CmdFeatCelestialNavigator, ConsoleActionFeature, "Console", "Grant Feat: Celestial Navigator", 0xBB9BA0)
-
 	// ---- affliction effect suppression ----
 	REGISTER_FEATURE_AS(CmdAfflictionsNofx, ConsoleActionFeature, "Console", "Suppress All Affliction FX", 0xBAF830)
 	REGISTER_FEATURE_AS(CmdBloodLossNofx, ConsoleActionFeature, "Console", "Suppress Blood Loss FX", 0xBB09E0)
