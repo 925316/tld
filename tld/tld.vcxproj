@@ -160,6 +160,7 @@
     <ClInclude Include="src\core\tracking.h" />
     <ClInclude Include="src\features\common.h" />
     <ClInclude Include="src\features\gear_iter.h" />
+    <ClInclude Include="src\features\static_list.h" />
     <ClInclude Include="src\overlay\menu.h" />
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +181,7 @@
     <ClCompile Include="src\features\esp.cpp" />
     <ClCompile Include="src\features\esp_extra.cpp" />
     <ClCompile Include="src\features\fire.cpp" />
+    <ClCompile Include="src\features\map.cpp" />
     <ClCompile Include="src\features\camera.cpp" />
     <ClCompile Include="src\features\voice.cpp" />
     <ClCompile Include="src\features\heatpad_flask.cpp" />
