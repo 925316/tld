@@ -109,6 +109,30 @@ private:
 	std::function<void()> m_action;
 };
 
+// Runs one of the game's built-in developer-console commands by RVA.
+// The commands are static void CONSOLE_xxx() methods on ConsoleManager.
+class ConsoleActionFeature : public Feature
+{
+public:
+	ConsoleActionFeature(const char* category, const char* name, uintptr_t rva)
+		: Feature(category, name)
+		, m_rva(rva)
+	{
+	}
+
+	bool IsAction() const override { return true; }
+
+	void OnAction() override
+	{
+		if (!g_gameAssemblyBase || m_rva == 0) return;
+		using ConsoleFn = void (*)(void*);
+		reinterpret_cast<ConsoleFn>(g_gameAssemblyBase + m_rva)(nullptr);
+	}
+
+private:
+	uintptr_t m_rva;
+};
+
 // Read-only feature (only renders OnMenu widgets / info).
 class InfoFeature : public Feature
 {
