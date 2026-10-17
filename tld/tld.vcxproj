@@ -181,6 +181,7 @@
     <ClCompile Include="src\features\esp.cpp" />
     <ClCompile Include="src\features\esp_extra.cpp" />
     <ClCompile Include="src\features\fire.cpp" />
+    <ClCompile Include="src\features\campfire.cpp" />
     <ClCompile Include="src\features\harvest.cpp" />
     <ClCompile Include="src\features\map.cpp" />
     <ClCompile Include="src\features\camera.cpp" />
