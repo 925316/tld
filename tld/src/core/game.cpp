@@ -90,6 +90,7 @@ GameComponentGetter GM_GetWind = nullptr;
 GameComponentGetter GM_GetSprainProtection = nullptr;
 GameComponentGetter GM_GetInsomnia = nullptr;
 GameComponentGetter GM_GetChemicalPoisoning = nullptr;
+GameComponentGetter GM_GetScurvy = nullptr;
 
 // game methods
 PlayerManager_AddItemCONSOLE_fn PlayerManager_AddItemCONSOLE = nullptr;
@@ -242,6 +243,7 @@ bool ResolveGameFunctions()
 	GM_GetSprainProtection = Resolve<GameComponentGetter>(base, Rva::GM_GetSprainProtection);
 	GM_GetInsomnia = Resolve<GameComponentGetter>(base, Rva::GM_GetInsomnia);
 	GM_GetChemicalPoisoning = Resolve<GameComponentGetter>(base, Rva::GM_GetChemicalPoisoning);
+	GM_GetScurvy = Resolve<GameComponentGetter>(base, Rva::GM_GetScurvy);
 
 	// game methods
 	PlayerManager_AddItemCONSOLE = Resolve<PlayerManager_AddItemCONSOLE_fn>(base, Rva::PlayerManager_AddItemCONSOLE);

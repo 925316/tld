@@ -340,6 +340,41 @@ namespace Offsets
 	constexpr uintptr_t WeatherClothingDamageInBlizzard = 0x138;
 	// Wind extras
 	constexpr uintptr_t WindMaxMPH = 0x28;
+	// Campfire / FireplaceInteraction
+	constexpr uintptr_t CampfireBurnedOut = 0xB8;
+	constexpr uintptr_t FireplaceFire = 0x60;
+	// MapDetail
+	constexpr uintptr_t MapDetailUnlocked = 0x88;
+	constexpr uintptr_t MapDetailDiscovered = 0x98;
+	constexpr uintptr_t MapDetailSurveyed = 0x99;
+	// Harvestable
+	constexpr uintptr_t HarvestableHarvested = 0x90;
+	constexpr uintptr_t HarvestableNumPrimary = 0x88;
+	constexpr uintptr_t HarvestableNumSecondary = 0x8C;
+	constexpr uintptr_t HarvestableRefreshMin = 0x74;
+	constexpr uintptr_t HarvestableRefreshMax = 0x78;
+	// Insomnia
+	constexpr uintptr_t InsomniaResistHours = 0x40;
+	constexpr uintptr_t InsomniaResistMultiplier = 0x44;
+	// Scurvy
+	constexpr uintptr_t ScurvyRiskThreshold = 0x30;
+	constexpr uintptr_t ScurvyCureThreshold = 0x34;
+	constexpr uintptr_t ScurvyStaminaDrainMultiplier = 0x48;
+	constexpr uintptr_t ScurvyFatigueMultiplier = 0x4C;
+	// Aurora wildlife scales
+	constexpr uintptr_t AuroraWildlifeDetectionScale = 0x34;
+	constexpr uintptr_t AuroraWildlifeFleeScale = 0x38;
+	constexpr uintptr_t AuroraDamageToPredatorsScale = 0x3C;
+	constexpr uintptr_t AuroraPredatorInflictDamageScale = 0x40;
+	constexpr uintptr_t AuroraPredatorFleeChanceScale = 0x44;
+	constexpr uintptr_t AuroraPredatorAttackDistanceScale = 0x48;
+	// CharcoalItem
+	constexpr uintptr_t CharcoalSurveyGameMinutes = 0x20;
+	constexpr uintptr_t CharcoalSurveyRealSeconds = 0x24;
+	// HandheldShortwaveItem
+	constexpr uintptr_t ShortwaveIntensity = 0x38;
+	constexpr uintptr_t ShortwaveFullSignalRange = 0x40;
+	constexpr uintptr_t ShortwaveMaxRange = 0x44;
 	// Repairable
 	constexpr uintptr_t RepairNeverFail = 0x59;
 	constexpr uintptr_t RepairConditionIncrease = 0x38;
@@ -412,6 +447,18 @@ namespace Offsets
 	// vp_FPSPlayer
 	constexpr uintptr_t FPSPlayerCamera = 0x28;
 	constexpr uintptr_t FPSPlayerController = 0x30;
+	constexpr uintptr_t FPSPlayerCrouchToggle = 0x50;
+	constexpr uintptr_t FPSPlayerInZoom = 0x55;
+	constexpr uintptr_t FPSPlayerAutoWalking = 0x75;
+	// vp_FPSCamera
+	constexpr uintptr_t CameraMouseSensitivity = 0xB8;
+	constexpr uintptr_t CameraZoomedSensitivity = 0xC0;
+	constexpr uintptr_t CameraRenderingFOV = 0xE8;
+	constexpr uintptr_t CameraUnzoomedFOV = 0xEC;
+	constexpr uintptr_t CameraNearClip = 0x278;
+	constexpr uintptr_t CameraAmbientSwayAngle = 0x98;
+	constexpr uintptr_t CameraAmbientSwaySpeed = 0x9C;
+	constexpr uintptr_t CameraDisableAmbientSwayStatic = 0x2;
 	// extra FallDamage
 	constexpr uintptr_t FallRopeDamagePerMeter = 0x28;
 	constexpr uintptr_t FallClothingDamagePerMeter = 0x34;
@@ -673,6 +720,7 @@ extern GameComponentGetter GM_GetWind;
 extern GameComponentGetter GM_GetSprainProtection;
 extern GameComponentGetter GM_GetInsomnia;
 extern GameComponentGetter GM_GetChemicalPoisoning;
+extern GameComponentGetter GM_GetScurvy;
 
 // ---- game method pointers ----
 using PlayerManager_AddItemCONSOLE_fn = void* (*)(void*, System_String*, int, float, void*);
