@@ -192,7 +192,6 @@
     <ClCompile Include="src\features\charcoal.cpp" />
     <ClCompile Include="src\features\campfire.cpp" />
     <ClCompile Include="src\features\harvest.cpp" />
-    <ClCompile Include="src\features\map.cpp" />
     <ClCompile Include="src\features\camera.cpp" />
     <ClCompile Include="src\features\voice.cpp" />
     <ClCompile Include="src\features\heatpad_flask.cpp" />
